@@ -1,15 +1,16 @@
 <script>
-	let count = 0
-	let click_me = () => {
-		count += 1
-	}
-	let or_me = () => {
-		count -= 1
-	}
+	import { ChuckNorris } from "./ChuckNorris";
+
+    let api = new ChuckNorris()
+    let joke = ""
+    let category = "dev";
+
+    let updateJoke = async () => {
+        joke = await api.getJoke(category)
+    }
 </script>
 
 <section>
-	<div>The number is: {count}</div>
-	<button class="btn btn-primary" on:click={click_me}>Click me</button>
-	<button class="btn btn-secondary" on:click={or_me}>Or me</button>
+	<div>{joke}</div>
+    <button on:click={updateJoke}>Update</button>
 </section>
