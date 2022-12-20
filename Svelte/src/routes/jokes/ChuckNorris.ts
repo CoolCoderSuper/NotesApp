@@ -6,8 +6,8 @@ export class ChuckNorris {
     }
 
     public async getJoke(category: string): Promise<string> {
-        var newUrl: string = this.url + category
-        var res = await fetch(newUrl)
+        let newUrl: string = this.url + category
+        let res = await fetch(newUrl)
         if (res.ok) {
             return (await res.json()).value
         } else {
