@@ -1,0 +1,45 @@
+﻿@page "/"
+<PageTitle>Notes</PageTitle>
+
+@if (_notes == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="AddNote">Add Note</button>
+    <br />
+    @foreach (Note n in _notes)
+    {
+        <InputText @bind-Value="@n.Content" />
+        <button class="btn btn-danger" @onclick="() => DeleteNoteAsync(n)">Delete</button>
+        <br />
+    }
+}
+
+@code{
+    //TODO: Add padding to the editors
+    //TODO: Use text area instead of input text
+    protected override async Task OnInitializedAsync()
+    {
+        _notes = await _noteService.GetNotes();
+    }
+
+    [Inject]
+    private NoteService _noteService { get; set; }
+    private List<Note> _notes;
+
+    private async void AddNote()
+    {
+        var n = new Note { Content = "" };
+        _notes.Add(n);
+        await _noteService.AddNoteAsync(n);
+        _notes = await _noteService.GetNotes();
+    }
+
+    private async void DeleteNoteAsync(Note n)
+    {
+        _notes.Remove(n);
+        await _noteService.DeleteNoteAsync(n.Id);
+    }
+}
