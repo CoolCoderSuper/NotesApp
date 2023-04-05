@@ -24,7 +24,7 @@ public class NoteService
     public async Task UpdateNoteAsync(Note note)
     {
         using var client = new HttpClient();
-        await client.PutAsJsonAsync($"https://coolcodersuper-crispy-potato-9g5q6w4pj52xx4j-5124.preview.app.github.dev/Notes/{note.Id}", note);
+        await client.PutAsJsonAsync("https://coolcodersuper-crispy-potato-9g5q6w4pj52xx4j-5124.preview.app.github.dev/Notes", note);
     }
 
     public async Task DeleteNoteAsync(int id)
