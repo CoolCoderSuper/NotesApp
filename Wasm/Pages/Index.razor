@@ -11,15 +11,14 @@ else
     <br />
     @foreach (Note n in _notes)
     {
-        <InputText Value="@n.Content" ValueExpression="@( ()=> n.Content )" ValueChanged="@( (string s) => UpdateNoteAsync(n, s) )"/>
-        <button class="btn btn-danger" @onclick="() => DeleteNoteAsync(n)">Delete</button>
-        <br />
+        <div style="padding-top: 5px;">
+            <InputTextArea Value="@n.Content" ValueExpression="@( ()=> n.Content )" ValueChanged="@( (string s) => UpdateNoteAsync(n, s) )"/>
+            <button class="btn btn-danger" @onclick="() => DeleteNoteAsync(n)">Delete</button>
+        </div>
     }
 }
 
 @code{
-    //TODO: Add padding to the editors
-    //TODO: Use text area instead of input text    
     protected override async Task OnInitializedAsync()
     {
         _notes = await _noteService.GetNotes();
