@@ -1,6 +1,7 @@
 <h1>Notes</h1>
 
-<script lang="ts">
+<script>
+
     let notes = [
         {content: 'Note 1'},
         {content: 'Note 2'},
