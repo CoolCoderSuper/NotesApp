@@ -31,3 +31,4 @@
 /workspaces/WebTesting/API/obj/Debug/net7.0/API.pdb
 /workspaces/WebTesting/API/obj/Debug/net7.0/API.genruntimeconfig.cache
 /workspaces/WebTesting/API/obj/Debug/net7.0/ref/API.dll
+/workspaces/WebTesting/API/bin/Debug/net7.0/notes.json
