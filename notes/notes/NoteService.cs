@@ -1,5 +1,7 @@
+using System.Collections.Generic;
+using System.Net.Http;
 using System.Net.Http.Json;
-namespace Wasm;
+using System.Threading.Tasks;
 
 public class NoteService
 {

@@ -22,4 +22,4 @@ app.UseAuthorization();
 app.MapControllers();
 app.UseCors(origins);
 
-app.Run("http://localhost:5446");
+app.Run("http://0.0.0.0:5446");
