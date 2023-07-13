@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.33808.371
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSilverTesting.Browser", "OpenSilverTesting\OpenSilverTesting.Browser\OpenSilverTesting.Browser.csproj", "{D7809A61-C446-4127-861D-F070400E5C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSilverTesting", "OpenSilverTesting\OpenSilverTesting\OpenSilverTesting.csproj", "{8BA68F0A-3D3A-402A-84B9-668C6C34E60D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSilverTesting.Simulator", "OpenSilverTesting\OpenSilverTesting.Simulator\OpenSilverTesting.Simulator.csproj", "{CBCACDA2-70EE-4809-AD65-BFD26F3A2B78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7809A61-C446-4127-861D-F070400E5C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7809A61-C446-4127-861D-F070400E5C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7809A61-C446-4127-861D-F070400E5C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7809A61-C446-4127-861D-F070400E5C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BA68F0A-3D3A-402A-84B9-668C6C34E60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA68F0A-3D3A-402A-84B9-668C6C34E60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA68F0A-3D3A-402A-84B9-668C6C34E60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA68F0A-3D3A-402A-84B9-668C6C34E60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCACDA2-70EE-4809-AD65-BFD26F3A2B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCACDA2-70EE-4809-AD65-BFD26F3A2B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCACDA2-70EE-4809-AD65-BFD26F3A2B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCACDA2-70EE-4809-AD65-BFD26F3A2B78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89ABFBBA-4958-43FD-9238-1463C14533B5}
+	EndGlobalSection
+EndGlobal
